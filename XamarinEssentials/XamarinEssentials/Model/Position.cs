@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+using Newtonsoft.Json;
+
 namespace XamarinEssentials.Model
 {
     public class Position
@@ -26,6 +28,7 @@ namespace XamarinEssentials.Model
         public double Log { get; set; }
         public double? Alt { get; set; }
 
+        [JsonProperty]
         public GeoCodeAddress GeoCodeAddress { get; set; }
         public string MessageError { get; set; }
     }
